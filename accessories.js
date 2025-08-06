@@ -118,7 +118,8 @@ const products = [
 
 function orderItem(item) {
   const message = `🧥 *${item.name}*\n💵 Price: ${item.price}\n📃 ${item.description}`;
-  const url = `https://t.me/share/url?url=${encodeURIComponent(item.image)}&text=${encodeURIComponent(message)}`;
+  const url = `https://t.me/TKgashaw1/url?Smart-Shop1/images
+/accessory/url=${encodeURIComponent(item.image)}&text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
 
@@ -152,4 +153,5 @@ document.getElementById("search-accessory").addEventListener("input", (e) => {
     item.description.toLowerCase().includes(keyword)
   );
   displayProducts(filtered);
+
 });
