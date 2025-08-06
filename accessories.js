@@ -118,9 +118,9 @@ const products = [
 
 function orderItem(item) {
   const message = `🧥 *${item.name}*\n💵 Price: ${item.price}\n📃 ${item.description}`;
-  const url = `https://t.me/TKgashaw1/url?images
+  const url = `https://t.me/TKgashaw1/url?https://github.com/TKgashaw/Smart-Shop1/images
 /accessory/url=${encodeURIComponent(item.image)}&text=${encodeURIComponent(message)}`;
-  window.open(url, "images/accessory/");
+  window.open(url, "_blank");
 }
 
 function displayProducts(list) {
@@ -155,4 +155,5 @@ document.getElementById("search-accessory").addEventListener("input", (e) => {
   displayProducts(filtered);
 
 });
+
 
